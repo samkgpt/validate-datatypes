@@ -19,8 +19,11 @@ var {
   isNumber,
   isString,
   isSymbol,
+  isBigint,
   isInteger,
+  isBooleans,
   isFunction,
+  isUndefined,
   isStringArray,
   isPositiveInteger,
 } = require( "validate-datatypes" );
@@ -29,10 +32,10 @@ var {
 ## Examples
 
 ```javascript
-console.log( isArray( ["Banana", 1, "Apple", 2] ) );
+console.log( isArray(["Banana", 1, "Apple", 2]) );
 // returns true
 
-console.log( isObject({ title: "title"}));
+console.log( isObject({ title: "title" }) );
 // returns true
 
 console.log( isNumber(5) );
@@ -44,16 +47,25 @@ console.log( isString("string") );
 console.log( isSymbol(Symbol()) );
 // returns true
 
+console.log( isBigint(42n) );
+// returns true
+
 console.log( isInteger(5) );
 // returns true
 
-console.log( isFunction(function isFunction(){}) );
+console.log( true );
 // returns true
 
-console.log( isStringArray( ["Banana", "Orange", "Apple", "Mango"] ) );
+console.log( isFunction(function isFunction() {}) );
 // returns true
 
-console.log( isPositiveInteger( -1 ) );
+console.log( isUndefined(undefined) );
+// returns true
+
+console.log( isStringArray(["Banana", "Orange", "Apple"]) );
+// returns true
+
+console.log( isPositiveInteger(-1) );
 // returns false
 ```
 

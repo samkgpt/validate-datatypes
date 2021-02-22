@@ -11,8 +11,11 @@ let {
   isFunction,
   isArray,
   isSymbol,
-  isPositiveInteger,
+  isBigint,
+  isBooleans,
+  isUndefined,
   isStringArray,
+  isPositiveInteger,
 } = require("./lib");
 
 /**
@@ -26,6 +29,9 @@ module.exports = {
   isFunction,
   isArray,
   isSymbol,
-  isPositiveInteger,
+  isBigint,
+  isBooleans,
+  isUndefined,
   isStringArray,
+  isPositiveInteger,
 };
