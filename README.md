@@ -14,29 +14,29 @@ $ npm install validate-datatypes
 
 ```javascript
 var {
+  isArray,
   isObject,
   isString,
   isInteger,
   isFunction,
-  isArray,
-  isPositiveInteger,
   isStringArray,
+  isPositiveInteger,
 } = require( "validate-datatypes" );
 ```
 
-## GitHub Rest Api Request
+## Examples
 
 ```javascript
 console.log( isString("string") );
 // returns true
 
-console.log( isNumber(5) );
+console.log(isNumber(5));
 // returns true
 
-console.log( isString(5) );
+console.log(isString(5));
 // returns false
 
-console.log( isArray(["Banana", "Orange", "Apple", "Mango"]) );
+console.log(isArray(["Banana", "Orange", "Apple", "Mango"]));
 // returns true
 ```
 
