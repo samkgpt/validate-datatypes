@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * Import repositories functions
+ * Import all data types functions
  */
 let {
   isObject,
@@ -19,7 +19,7 @@ let {
 } = require("./lib");
 
 /**
- * Exports all imported GitHub functions
+ * Exports all data types functions
  */
 module.exports = {
   isObject,
