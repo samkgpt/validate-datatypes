@@ -13,11 +13,9 @@ $ npm install validate-datatypes
 ## Usage
 
 ```javascript
-var {
-    isArray, isObject, isNumber, isString,
-    isSymbol, isBigint, isInteger, isBooleans,
-    isFunction, isUndefined, isStringArray, isPositiveInteger,
-} = require( "validate-datatypes" );
+var { isArray, isObject, isNumber, isString, isSymbol,
+      isBigint, isInteger, isBooleans,isFunction, isUndefined,
+      isStringArray, isPositiveInteger } = require( "validate-datatypes" );
 ```
 
 ## Examples
