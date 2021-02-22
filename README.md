@@ -14,7 +14,7 @@ $ npm install validate-datatypes
 
 ```javascript
 var { isArray, isObject, isNumber, isString, isSymbol,
-      isBigint, isInteger, isBooleans,isFunction, isUndefined,
+      isBigint, isInteger, isBooleans, isFunction, isUndefined,
       isStringArray, isPositiveInteger } = require( "validate-datatypes" );
 ```
 
@@ -42,7 +42,7 @@ console.log( isBigint(42n) );
 console.log( isInteger(5) );
 // returns true
 
-console.log( true );
+console.log( isBooleans(true) );
 // returns true
 
 console.log( isFunction(function isFunction() {}) );
@@ -56,6 +56,9 @@ console.log( isStringArray(["Banana", "Orange", "Apple"]) );
 
 console.log( isPositiveInteger(-1) );
 // returns false
+
+console.log( isPositiveInteger(1) );
+// returns true
 ```
 
 ## License
