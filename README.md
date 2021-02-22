@@ -16,7 +16,9 @@ $ npm install validate-datatypes
 var {
   isArray,
   isObject,
+  isNumber,
   isString,
+  isSymbol,
   isInteger,
   isFunction,
   isStringArray,
@@ -27,17 +29,32 @@ var {
 ## Examples
 
 ```javascript
+console.log( isArray( ["Banana", 1, "Apple", 2] ) );
+// returns true
+
+console.log( isObject({ title: "title"}));
+// returns true
+
+console.log( isNumber(5) );
+// returns true
+
 console.log( isString("string") );
 // returns true
 
-console.log(isNumber(5));
+console.log( isSymbol(Symbol()) );
 // returns true
 
-console.log(isString(5));
+console.log( isInteger(5) );
+// returns true
+
+console.log( isFunction(function isFunction(){}) );
+// returns true
+
+console.log( isStringArray( ["Banana", "Orange", "Apple", "Mango"] ) );
+// returns true
+
+console.log( isPositiveInteger( -1 ) );
 // returns false
-
-console.log(isArray(["Banana", "Orange", "Apple", "Mango"]));
-// returns true
 ```
 
 ## License

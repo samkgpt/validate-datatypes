@@ -6,9 +6,11 @@
 let {
   isObject,
   isString,
+  isNumber,
   isInteger,
   isFunction,
   isArray,
+  isSymbol,
   isPositiveInteger,
   isStringArray,
 } = require("./lib");
@@ -19,9 +21,11 @@ let {
 module.exports = {
   isObject,
   isString,
+  isNumber,
   isInteger,
   isFunction,
   isArray,
+  isSymbol,
   isPositiveInteger,
   isStringArray,
 };
